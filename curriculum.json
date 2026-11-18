@@ -1,0 +1,11 @@
+{
+  "topic": "Secondary glomerulopathies: diabetic kidney disease, lupus nephritis, Alport syndrome / thin GBM, renal amyloidosis",
+  "system": "Renal / urinary",
+  "specialty": "Nephrology",
+  "eciModule": "Module III — Formación clínica humana (with links to Module I — Morfología, estructura y función: histology of the filtration barrier, type IV collagen genetics)",
+  "typicalSubjects": ["Nefrología", "Patología médica", "Fisiopatología", "Anatomía patológica", "Reumatología", "Endocrinología", "Genética médica", "Histología"],
+  "mirRelevant": true,
+  "keywords_es": ["nefropatía diabética", "enfermedad renal diabética", "Kimmelstiel-Wilson", "albuminuria", "KDIGO", "nefropatía lúpica", "clasificación ISN/RPS", "complemento C3 C4", "síndrome de Alport", "colágeno IV", "membrana basal delgada", "amiloidosis AL", "amiloidosis AA", "rojo Congo", "birrefringencia", "glomérulo 3D"],
+  "keywords_en": ["diabetic nephropathy", "diabetic kidney disease", "Kimmelstiel-Wilson", "albuminuria", "KDIGO", "lupus nephritis", "ISN/RPS classification", "complement", "Alport syndrome", "type IV collagen", "thin basement membrane", "AL amyloidosis", "AA amyloidosis", "Congo red", "birefringence", "3D glomerulus"],
+  "languages": ["es", "en"]
+}

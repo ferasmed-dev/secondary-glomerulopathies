@@ -1,0 +1,10 @@
+{
+  "name": "secondary-glomerulopathies",
+  "version": "1.0.0",
+  "description": "Interactive 2D/3D glomerulus for secondary glomerulopathies: diabetic kidney disease, lupus nephritis, Alport syndrome / thin GBM and renal amyloidosis. Teaching tool, ES/EN.",
+  "type": "module",
+  "private": true,
+  "scripts": { "test": "node --test" },
+  "license": "MIT",
+  "author": "Feras Elhissi"
+}

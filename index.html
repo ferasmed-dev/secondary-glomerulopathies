@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glomerulopatías secundarias · glomérulo interactivo</title>
+  <meta name="description" content="Glomérulo interactivo 2D/3D: nefropatía diabética, nefropatía lúpica, síndrome de Alport / MBG delgada y amiloidosis, frente a lo normal. Herramienta docente.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23fbecf1' stroke='%239b8f96' stroke-width='2'/%3E%3Ccircle cx='12' cy='13' r='4' fill='none' stroke='%23c4537e' stroke-width='2'/%3E%3Ccircle cx='20' cy='13' r='4' fill='none' stroke='%23c4537e' stroke-width='2'/%3E%3Ccircle cx='16' cy='20' r='4' fill='none' stroke='%23c4537e' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="view.title">Glomérulo</a>
+  <header class="top">
+    <div>
+      <h1 data-i18n="app.title">Glomerulopatías secundarias</h1>
+      <p class="sub" data-i18n="app.subtitle"></p>
+    </div>
+    <div class="lang" role="group" aria-label="Idioma" id="lang">
+      <button type="button" data-lang="es">ES</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" id="tabs" aria-label="Entidad"></nav>
+
+  <main id="main" class="grid">
+    <section class="card viewer" aria-labelledby="viewer-h">
+      <div class="card-head">
+        <h2 id="viewer-h"><span data-i18n="view.title">Glomérulo</span> <span class="badge" id="badge"></span></h2>
+        <div class="seg" role="group" id="viewSeg">
+          <button type="button" data-view="3d" data-i18n="view.3d">3D</button>
+          <button type="button" data-view="lm" data-i18n="view.lm">MO</button>
+        </div>
+      </div>
+      <p class="kdigo" id="kdigo"></p>
+      <div class="stage">
+        <canvas id="c3d" tabindex="0"></canvas>
+        <div id="lm" hidden></div>
+      </div>
+      <div class="view-foot">
+        <label class="check small" id="autoWrap"><input type="checkbox" id="auto"> <span data-i18n="view.rotate"></span></label>
+        <span class="muted small" id="hint3d" data-i18n="view.hint3d"></span>
+        <span class="muted small" id="showing"></span>
+      </div>
+      <ul class="legend" id="legend"></ul>
+    </section>
+
+    <div class="side">
+    <section class="card controls" aria-labelledby="controls-h">
+      <h2 id="controls-h" data-i18n="controls.title">Controles</h2>
+      <div id="controls"></div>
+    </section>
+
+    <section class="card params" aria-labelledby="params-h">
+      <h2 id="params-h"><span data-i18n="params.title"></span> <span class="tag" data-model></span></h2>
+      <div id="params"></div>
+    </section>
+    </div>
+
+    <section class="card em" aria-labelledby="em-h">
+      <h2 id="em-h" data-i18n="em.title"></h2>
+      <div id="em"></div>
+      <h3 data-i18n="biopsy.title"></h3>
+      <p class="muted small" data-i18n="biopsy.hint"></p>
+      <div id="biopsy"></div>
+      <p class="small" id="biopsyCounts"></p>
+    </section>
+
+    <section class="card what" aria-labelledby="what-h">
+      <h2 id="what-h" data-i18n="what.title"></h2>
+      <p class="muted small" data-i18n="what.hint"></p>
+      <ol id="pathway" class="pathway"></ol>
+    </section>
+
+    <section class="card micro" aria-labelledby="micro-h">
+      <h2 id="micro-h" data-i18n="micro.title"></h2>
+      <div id="micro"></div>
+    </section>
+
+    <section class="card refs" aria-labelledby="refs-h">
+      <h2 id="refs-h" data-i18n="refs.title"></h2>
+      <div id="refs"></div>
+    </section>
+
+    <section class="card history" aria-labelledby="history-h">
+      <div class="card-head">
+        <h2 id="history-h"><span data-i18n="history.title"></span> <span class="tag" data-model></span></h2>
+        <button type="button" class="link" id="tableToggle"></button>
+      </div>
+      <div id="history"></div>
+    </section>
+
+    <section class="card presets" aria-labelledby="presets-h">
+      <h2 id="presets-h" data-i18n="presets.title"></h2>
+      <p class="muted small" data-i18n="presets.hint"></p>
+      <div id="presets"></div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p><strong data-i18n="footer"></strong></p>
+    <p class="muted small" data-i18n="footer.model"></p>
+    <p class="muted small">MIT · <a href="https://github.com/ferasmed-dev/secondary-glomerulopathies">github.com/ferasmed-dev/secondary-glomerulopathies</a></p>
+  </footer>
+
+  <script type="module" src="src/ui.js"></script>
+</body>
+</html>
